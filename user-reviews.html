@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Reviews - Sports Equipment Reviews</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="comparison.html">Comparison</a></li>
+                <li><a href="buying-guide.html">Buying Guide</a></li>
+                <li><a href="expert-opinions.html">Expert Opinions</a></li>
+                <li><a href="user-reviews.html">User Reviews</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Submit Your Review</h1>
+        <p>Please share your experience with the sports equipment you’ve used! Your review helps others make informed decisions.</p>
+
+        <!-- Review Form -->
+        <form action="https://formspree.io/f/xgvkaeko" method="POST">
+            <label for="product-name">Product Name:</label>
+            <input type="text" id="product-name" name="product-name" required>
+
+            <label for="review">Your Review:</label>
+            <textarea id="review" name="review" required></textarea>
+
+            <label for="rating">Rating:</label>
+            <select id="rating" name="rating" required>
+                
+                <option value="" disabled selected>Select a rating</option>
+
+                <option value="1">1 Star</option>
+                <option value="2">2 Stars</option>
+                <option value="3">3 Stars</option>
+                <option value="4">4 Stars</option>
+                <option value="5">5 Stars</option>
+            </select>
+
+            <button type="submit">Submit Review</button>
+        </form>
+
+        <h2>Recent Reviews</h2>
+        <!-- Sample Reviews Section -->
+        <div class="sample-reviews">
+            <div class="review">
+                <h3>Youth Basketball Shoes</h3>
+                <p><strong>Rating:</strong> 4/5</p>
+                <p><strong>Review:</strong> These basketball shoes provide great ankle support and traction on the court. Perfect for young athletes just starting out.</p>
+            </div>
+            <div class="review">
+                <h3>Beginner Baseball Bat</h3>
+                <p><strong>Rating:</strong> 5/5</p>
+                <p><strong>Review:</strong> This bat is lightweight and durable, making it a great option for youth baseball players who are just getting started.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sports Equipment Reviews. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>
